@@ -14,7 +14,9 @@ End Sub
 '----------------------------------------------
 ' name  |  varchar(255)  |  Êý¾Ý¿âÃû
 '----------------------------------------------
-'
+'<SQL>
+'custom sql, such as: create index idx_demo on db_t(name);
+'</SQL>
 Sub generate_sql(output)
      Set fsObj = CreateObject("Scripting.FileSystemObject")
      Set file = fsObj.CreateTextFile(output, True)
